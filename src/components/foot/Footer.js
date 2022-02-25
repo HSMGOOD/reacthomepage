@@ -62,7 +62,7 @@ export default Footer
 
 const FooterFt = styled.div `
   background-color: rgb(32,35,42);
-  margin-top: 90%;
+  /* margin-top: 90%; */
   height: 32vh;
   width: 100vw;
   padding-top: 40px;

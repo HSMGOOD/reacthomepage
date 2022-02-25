@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Land from "./components/Landing";
+import Land from "./components/landing/Landing";
 
 
 function App() {
