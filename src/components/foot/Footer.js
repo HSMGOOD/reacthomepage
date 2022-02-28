@@ -26,12 +26,6 @@ function Footer() {
             <Link to="1">자주 묻는 질문</Link>
           </Document>
 
-          <Comunity>
-            커뮤니티
-            <Link to="1">Code of Conduct</Link>
-            <Link to="1">Community Resources</Link>      
-          </Comunity>
-          
           <Channel>
             채널
             <Link to="1">GitHub</Link>
@@ -42,6 +36,12 @@ function Footer() {
             <Link to="1">Facebook</Link>
             <Link to="1">Twitter</Link>
           </Channel>
+
+          <Comunity>
+            커뮤니티
+            <Link to="1">Code of Conduct</Link>
+            <Link to="1">Community Resources</Link>      
+          </Comunity>
           
           <More>
             더보기
@@ -63,7 +63,7 @@ export default Footer
 const FooterFt = styled.div `
   background-color: rgb(32,35,42);
   /* margin-top: 90%; */
-  height: 32vh;
+  height: 20vh;
   width: 100vw;
   padding-top: 40px;
 `;
@@ -75,12 +75,19 @@ const FooterSub = styled.div`
 
 const Coper = styled.div`
   color: white;
+  font-size: 13px;
 `;
 const FooterMenuList = styled.div`
   color: gray;
   font-size: 13px;
   display: flex;
-  
+
+  a {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+  }
 `;
 
 
@@ -88,22 +95,28 @@ const Document = styled.div`
   margin: 0px 50px;
   display: flex;
   flex-direction: column;
+
 `;
 
 const Comunity = styled.div`
   margin: 0px 50px;
   display: flex;
   flex-direction: column;
+
 `;
 
 const Channel = styled.div`
   margin: 0px 50px;
   display: flex;
   flex-direction: column;
+
 `;
 
 const More = styled.div`
   margin: 0px 50px;
   display: flex;
   flex-direction: column;
+
 `;
+
+
