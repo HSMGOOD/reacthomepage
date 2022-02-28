@@ -5,13 +5,15 @@ import { useNavigate } from 'react-router-dom';
 function Header() {
   const navi = useNavigate();
   return (
+  <div>
     <HeaderTitle>
       <ReactTitle onClick={ ()=> navi("/")}>React</ReactTitle>
       <Title_1>문서</Title_1>
-      <Title_2>자습서</Title_2>
+      <Title_2 onClick={()=> navi("/tutorial")}>자습서</Title_2>
       <Title_3>블로그</Title_3>
       <Title_4 onClick={ ()=>navi("/comunity") }>커뮤니티</Title_4>
     </HeaderTitle>
+  </div>    
   )
 }
 
