@@ -1,14 +1,16 @@
 import React from 'react'
 import styled from "styled-components";
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
+  const navi = useNavigate();
   return (
     <HeaderTitle>
-      <ReactTitle>React</ReactTitle>
+      <ReactTitle onClick={ ()=> navi("/")}>React</ReactTitle>
       <Title_1>문서</Title_1>
       <Title_2>자습서</Title_2>
       <Title_3>블로그</Title_3>
-      <Title_4>커뮤니티</Title_4>
+      <Title_4 onClick={ ()=>navi("/comunity") }>커뮤니티</Title_4>
     </HeaderTitle>
   )
 }
